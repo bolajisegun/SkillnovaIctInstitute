@@ -6,7 +6,6 @@ import SkillnovaWordmark from "../images/Skillnova_Logo_Wordmark.png";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import { HiMenu, HiX } from "react-icons/hi";
-import Typinghero from "./Typinghero";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,7 +98,6 @@ const Header = () => {
             </button>
           </div>
         </div>
-
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 space-y-4 font-semibold">
@@ -171,10 +169,6 @@ const Header = () => {
         )}
       </nav>
       {/* The nav bar ends here */}
-      {/* hero section starts here */}
-      <div className="hero-section">
-        <Typinghero />
-      </div>
     </header>
   );
 };

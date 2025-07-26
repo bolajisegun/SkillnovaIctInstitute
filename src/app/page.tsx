@@ -1,3 +1,7 @@
+import CourseBar from "./Component/CourseBar";
+import TypingHero from "./Component/Typinghero";
+import Link from "next/link";
+
 export default async function Home() {
   // const response = await fetch("https://dummyjson.com/posts");
   // const data = await response.json();
@@ -8,12 +12,17 @@ export default async function Home() {
   // }
 
   return (
-    <section className="">
-      {/* {data.posts.map((item: posts) => (
-        <h1 key={item.id}>{item.title}</h1>
-      ))} */}
+    <>
+      {/* hero section starts here */}
+      <section className="">
+        <div className="hero-section">
+          <TypingHero />
+        </div>
+      </section>
+      {/* hero section ends here */}
 
-      <h1>Home</h1>
-    </section>
+      {/* The course main category bar starts here */}
+      <CourseBar />
+    </>
   );
 }
