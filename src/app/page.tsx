@@ -31,7 +31,7 @@ export default async function Home() {
         <h2 className="title text-center text-2xl md:text-4xl font-bold mb-6">
           Explore Our Top Courses
         </h2>
-        <div className="dummy flex flex-nowrap md:flex-wrap justify-center gap-4 overflow-x-scroll scroll-smooth">
+        <div className="dummy flex flex-nowrap md:flex-wrap justify-center gap-4 overflow-x-scroll scroll-smooth w-[95%] md:w-[90%] mx-auto mt-4 py-4 rounded-md scrollbar-hide sm:justify-center sm:flex-wrap relative">
           <HomepageCard />
           <HomepageCard />
           <HomepageCard />
