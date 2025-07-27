@@ -43,3 +43,7 @@ body {
 .course-category-bar {
   scrollbar-width: none;
 }
+
+.dummy {
+  scrollbar-width: none;
+}
