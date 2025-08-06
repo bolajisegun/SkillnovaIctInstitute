@@ -1,4 +1,5 @@
 import CourseBar from "./Component/CourseBar";
+import HomeMemberCard from "./Component/HomeMemberCard";
 import HomepageCard from "./Component/homepageCard";
 import TypingHero from "./Component/Typinghero";
 // import Link from "next/link";
@@ -40,6 +41,18 @@ export default async function Home() {
           <HomepageCard />
           <HomepageCard />
           <HomepageCard />
+        </div>
+      </section>
+      {/* The homepage card section ends here */}
+      <section className="member">
+        <h2 className="title text-center text-2xl md:text-4xl font-bold mb-6">
+          BECOME A MEMBER
+        </h2>
+        <p className="text-center text-sm md:text-md">
+          Join our community and unlock exclusive benefits!
+        </p>
+        <div className="member-card flex justify-center mt-4">
+          <HomeMemberCard />
         </div>
       </section>
     </>

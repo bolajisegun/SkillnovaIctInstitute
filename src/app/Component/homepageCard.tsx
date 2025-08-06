@@ -7,7 +7,7 @@ import Link from "next/link";
 const HomepageCard = () => {
   return (
     <div>
-      <div className="courseImg w-[250px] md:w-[350px] bg-white rounded-md shadow-lg hover:border-2 hover:border-[#4A90E2] transition-all p-4 flex flex-col items-center   ">
+      <div className="courseImg w-[250px] md:w-[350px] bg-white rounded-md shadow-lg hover:border-2 hover:border-[#4A90E2] transition-all p-4 flex flex-col items-center">
         <Image src={CourseImage} alt="Course Image" />
         <div className="courseInfo">
           <h5 className="courseSubtitle text-[#4A90E2] my-4 text-[10px] md:text-[12px] font-semibold">
