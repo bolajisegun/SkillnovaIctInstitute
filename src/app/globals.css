@@ -47,3 +47,6 @@ body {
 .dummy {
   scrollbar-width: none;
 }
+p {
+  color: #99a1af;
+}

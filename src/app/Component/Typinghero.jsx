@@ -42,7 +42,7 @@ export default function TypingHero() {
         {displayedText}
         <span className="animate-pulse">|</span>
       </h1>
-      <p>
+      <p className="hero-description mt-4">
         Welcome to Skillnova, your gateway to digital, academic, and business
         excellence. Explore our diverse range of courses designed to empower you
         with the skills you need to succeed in today's fast-paced world.
