@@ -76,7 +76,7 @@ const StudentDashboard = () => {
         <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center md:text-left px-2 md:px-4 lg:px-8">
           Ongoing Courses
         </h2>
-        <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
+        <div className=" dummy flex flex-nowrap overflow-x-scroll gap-4 w-[90%] mx-[auto]">
           <OngoingCourses />
           <OngoingCourses />
           <OngoingCourses />
@@ -87,7 +87,7 @@ const StudentDashboard = () => {
         <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center md:text-left px-2 md:px-4 lg:px-8">
           Completed Courses
         </h2>
-        <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
+        <div className="dummy flex flex-nowrap overflow-x-scroll gap-4 w-[90%] mx-[auto]">
           <HomepageCard />
           <HomepageCard />
           <HomepageCard />
