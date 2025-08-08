@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import CourseImage from "../images/react-next-js.png";
+import CourseImage from "../images/data-science.png";
 import { CiStar } from "react-icons/ci";
 import Link from "next/link";
+import ProgressBar from "./Progress-Bar";
 
 const OngoingCourses = () => {
   return (
@@ -31,6 +32,9 @@ const OngoingCourses = () => {
                 5.0<span className="text-gray-500 font-normal">(1200)</span>
               </span>
             </div>
+          </div>
+          <div className="mt-3">
+            <ProgressBar value={65} max={100} />
           </div>
           <Link
             href="/course/react-next-js"
