@@ -9,9 +9,15 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Closes menu when any link is clicked
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <header>
-      <nav className="bg-white shadow-md px-4 py-2">
+    <header className="relative">
+      <nav className="bg-white shadow-md px-4 py-2 fixed w-full top-0 left-0 z-50">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-4">
@@ -27,36 +33,42 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex gap-4 font-semibold">
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/"
               >
                 Home
               </Link>
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/Courses"
               >
                 Membership
               </Link>
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/Courses"
               >
                 Courses
               </Link>
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/Courses"
               >
                 About Us
               </Link>
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/StudentDashboard"
               >
                 Dashboard
               </Link>
               <Link
+                onClick={handleLinkClick}
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
                 href="/Courses"
               >
@@ -98,48 +110,55 @@ const Header = () => {
             </button>
           </div>
         </div>
-        {/* Mobile Dropdown Menu */}
+
+        {/* Mobile Overlay Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 space-y-4 font-semibold">
+          <div className="fixed inset-0 bg-white z-40 p-4 pt-16 md:hidden flex flex-col gap-4 font-semibold">
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/"
             >
               Home
             </Link>
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/Courses"
             >
               Membership
             </Link>
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/Courses"
             >
               Courses
             </Link>
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/Courses"
             >
               About Us
             </Link>
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/StudentDashboard"
             >
               Dashboard
             </Link>
             <Link
-              className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
+              onClick={handleLinkClick}
+              className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
               href="/Courses"
             >
               Contact Us
             </Link>
 
             {/* Search Bar */}
-            <div className="px-4 py-2">
+            <div>
               <div className="flex items-center">
                 <CiSearch className="relative left-5" />
                 <input
@@ -151,24 +170,23 @@ const Header = () => {
             </div>
 
             {/* Auth Buttons */}
-            <div className="px-4 py-2 flex flex-col gap-2">
-              <Link
-                href="#"
-                className="block text-center hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
-              >
-                Sign Up
-              </Link>
-              <Link
-                href="#"
-                className="block text-center hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
-              >
-                Log In
-              </Link>
-            </div>
+            <Link
+              onClick={handleLinkClick}
+              href="#"
+              className="text-center hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
+            >
+              Sign Up
+            </Link>
+            <Link
+              onClick={handleLinkClick}
+              href="#"
+              className="text-center hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
+            >
+              Log In
+            </Link>
           </div>
         )}
       </nav>
-      {/* The nav bar ends here */}
     </header>
   );
 };
