@@ -37,7 +37,7 @@ const CompletedCourses = () => {
             className="w-full flex justify-center mt-5"
           >
             <button className="enrollButton px-4 py-2 bg-[#4A90E2] hover:bg-[#899cb1] text-white rounded-md transition w-full">
-              Resume Course
+              View Certificate
             </button>
           </Link>
         </div>
