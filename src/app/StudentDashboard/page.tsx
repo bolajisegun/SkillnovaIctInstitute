@@ -5,6 +5,7 @@ import { PiGraduationCap } from "react-icons/pi";
 import { SlBadge } from "react-icons/sl";
 import { StudentChart } from "../Component/Student-Chart";
 import OngoingCourses from "../Component/Ongoing-Courses";
+import CompletedCourses from "../Component/Completed-Courses";
 
 const StudentDashboard = () => {
   return (
@@ -79,6 +80,17 @@ const StudentDashboard = () => {
           <OngoingCourses />
           <OngoingCourses />
           <OngoingCourses />
+        </div>
+      </section>
+      <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center px-2 md:px-4 lg:px-8">
+          Completed Courses
+        </h2>
+        <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
+          <CompletedCourses />
+          <CompletedCourses />
+          <CompletedCourses />
+          <CompletedCourses />
         </div>
       </section>
     </div>
