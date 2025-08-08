@@ -17,8 +17,9 @@ const CompletedCourses = () => {
             Data Science
           </h3>
           <p className="courseDescription text-[12px] md:text-[13px]">
-            Build modern, high-performance web applications with React and
-            Next.js, including server-side rendering and API integrations.
+            Learn essential data science concepts, including data analysis,
+            visualization, machine learning, and practical Python skills for
+            real-world projects.
           </p>
           <div className="courseActions flex items-center justify-between mt-4 w-full">
             <div className="rating flex items-center gap-1 text-sm md:text-md text-yellow-500">

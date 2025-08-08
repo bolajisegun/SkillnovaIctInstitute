@@ -72,7 +72,7 @@ const StudentDashboard = () => {
         <StudentChart />
       </section>
       <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
-        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center px-2 md:px-4 lg:px-8">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center md:text-left px-2 md:px-4 lg:px-8">
           Ongoing Courses
         </h2>
         <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
@@ -83,9 +83,23 @@ const StudentDashboard = () => {
         </div>
       </section>
       <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
-        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center px-2 md:px-4 lg:px-8">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center md:text-left px-2 md:px-4 lg:px-8">
           Completed Courses
         </h2>
+        <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
+          <CompletedCourses />
+          <CompletedCourses />
+          <CompletedCourses />
+          <CompletedCourses />
+        </div>
+      </section>
+      <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center md:text-left px-2 md:px-4 lg:px-8">
+          Recommended For You
+        </h2>
+        <p className="text-sm md:text-md lg:text-lg mb-4">
+          Based on your interests and learning history.
+        </p>
         <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
           <CompletedCourses />
           <CompletedCourses />
