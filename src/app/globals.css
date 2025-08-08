@@ -1,29 +1,14 @@
 @import "tailwindcss";
-
-:root {
-  --background: #333333;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #333333;
-    --foreground: #ededed;
-  }
-}
+@import "tw-animate-css";
 
 body {
   /* background: var(--background); */
   /* color: var(--foreground); */
   /* padding: 10px; */
   font-family: poppins;
+}
+.btn {
+  @apply px-4 py-2 bg-[#4A90E2] hover:bg-[#899cb1] hover:text-white rounded-md transition text-center text-white w-full;
 }
 
 /* header section starts here */
@@ -49,4 +34,32 @@ body {
 }
 p {
   color: #99a1af;
+}
+
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+/* Shadcn Chart UI  */
+@layer base {
+  :root {
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+  }
+
+  .dark {
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+  }
 }

@@ -52,7 +52,7 @@ const Header = () => {
               </Link>
               <Link
                 className="hover:bg-[#4A90E2] hover:text-white rounded-md px-4 py-2 transition"
-                href="/Courses"
+                href="/StudentDashboard"
               >
                 Dashboard
               </Link>
@@ -127,7 +127,7 @@ const Header = () => {
             </Link>
             <Link
               className="block px-4 py-2 hover:bg-[#4A90E2] hover:text-white rounded-md transition"
-              href="/Courses"
+              href="/StudentDashboard"
             >
               Dashboard
             </Link>
