@@ -4,6 +4,7 @@ import { IoTimeOutline } from "react-icons/io5";
 import { PiGraduationCap } from "react-icons/pi";
 import { SlBadge } from "react-icons/sl";
 import { StudentChart } from "../Component/Student-Chart";
+import OngoingCourses from "../Component/Ongoing-Courses";
 
 const StudentDashboard = () => {
   return (
@@ -68,6 +69,17 @@ const StudentDashboard = () => {
           Monthly Learning Hours
         </h2>
         <StudentChart />
+      </section>
+      <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
+        <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-8 text-center px-2 md:px-4 lg:px-8">
+          Ongoing Courses
+        </h2>
+        <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
+          <OngoingCourses />
+          <OngoingCourses />
+          <OngoingCourses />
+          <OngoingCourses />
+        </div>
       </section>
     </div>
   );
