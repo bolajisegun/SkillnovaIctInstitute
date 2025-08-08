@@ -6,6 +6,7 @@ import { SlBadge } from "react-icons/sl";
 import { StudentChart } from "../Component/Student-Chart";
 import OngoingCourses from "../Component/Ongoing-Courses";
 import CompletedCourses from "../Component/Completed-Courses";
+import HomepageCard from "../Component/homepageCard";
 
 const StudentDashboard = () => {
   return (
@@ -87,10 +88,10 @@ const StudentDashboard = () => {
           Completed Courses
         </h2>
         <div className="flex flex-wrap gap-4 w-[90%] mx-[auto]">
-          <CompletedCourses />
-          <CompletedCourses />
-          <CompletedCourses />
-          <CompletedCourses />
+          <HomepageCard />
+          <HomepageCard />
+          <HomepageCard />
+          <HomepageCard />
         </div>
       </section>
       <section className="ongoing-course my-6 md:my-8 lg:my-12 w-[90%] mx-[auto]">
