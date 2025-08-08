@@ -14,8 +14,8 @@ body {
 /* header section starts here */
 
 .hero-section {
-  background-image: url("../app/images/hero-bgg.png"),
-    url("../app/images/overlay.png");
+  background-image: url("../app/images/overlay.png"),
+    url("../app/images/hero-bgg.png");
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -62,4 +62,17 @@ p {
     --chart-4: oklch(0.627 0.265 303.9);
     --chart-5: oklch(0.645 0.246 16.439);
   }
+}
+
+/* Explore Courses */
+.exploreCourses {
+  background-image: url("../app/images/overlay.png"),
+    url("../app/images/explore-course-banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
